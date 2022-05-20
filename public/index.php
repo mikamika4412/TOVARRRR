@@ -93,7 +93,7 @@ class Tovar extends TovarCalculator
         return $result;
      }
 
-    static function resultSumByTovars(array $arrayTovars) : float //реализує розрахунок ціни заказу і повертає ціну за цей тип товару
+    static function resultSumByTovars(array $arrayTovars) : float //реализує розрахунок ціни заказу
     {
       for ($i=0; $i<count($arrayTovars); $i++) {
         $result += $arrayTovars[$i]->resultSum;
